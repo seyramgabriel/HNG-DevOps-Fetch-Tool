@@ -37,7 +37,8 @@ The installation script will check for the availability of dependencies and inst
 ./install.sh
 ```
 
-Usage
+#### Usage
+
 Running the Script Manually
 You can use devopsfetch.sh to retrieve various system information. Here are the available options:
 
@@ -47,6 +48,7 @@ You can use devopsfetch.sh to retrieve various system information. Here are the 
 
 Options
 -p, --port [PORT_NUMBER]
+
 Display all active ports and services, or detailed info about a specific port.
 
 Examples:
@@ -57,6 +59,7 @@ Examples:
 ```
 
 -d, --docker [CONTAINER]
+
 List all Docker images and containers, or detailed info about a specific container.
 
 Examples:
@@ -67,6 +70,7 @@ Examples:
 ```
 
 -n, --nginx [DOMAIN]
+
 Display all Nginx domains and their ports, or detailed config info for a specific domain.
 
 Examples:
@@ -77,6 +81,7 @@ Examples:
 ```
 
 -u, --users [USERNAME]
+
 List all users and their last login times, or detailed info about a specific user.
 
 Examples:
@@ -87,6 +92,7 @@ Examples:
 ```
 
 -t, --time [TIME_RANGE]
+
 Display activities within a specified time range.
 
 Example:
@@ -99,6 +105,7 @@ Example:
 Show the help message and exit.
 
 Continuous Monitoring with Systemd
+
 The devopsfetch tool includes a systemd service for continuous monitoring and logging.
 
 Start the Service
