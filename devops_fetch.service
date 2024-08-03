@@ -1,0 +1,10 @@
+[Unit]
+Description=DevOpsFetch Service
+
+[Service]
+ExecStart=/usr/bin/bash /home/ubuntu/HNG/devops_fetch.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
