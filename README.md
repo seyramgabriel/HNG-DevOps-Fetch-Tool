@@ -102,13 +102,20 @@ Example:
 ```
 
 -h, --help
+
 Show the help message and exit.
 
-Continuous Monitoring with Systemd
+Example 
+
+```sh
+./devopsfetch.sh -h
+```
+
+#### Continuous Monitoring with Systemd
 
 The devopsfetch tool includes a systemd service for continuous monitoring and logging.
 
-Start the Service
+#### Start the Service
 ```sh
 sudo systemctl start devopsfetch.service
 Enable the Service to Start on Boot
@@ -123,14 +130,15 @@ Check the Status of the Service
 sudo systemctl status devopsfetch.service
 ```
 
-View the Logs
+#### View the Logs
 The logs are managed by systemd. You can view the logs using journalctl.
 
 ```sh
 journalctl -u devopsfetch.service
 ```
 
-Contributing
+### Contributing
+
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 License
