@@ -24,7 +24,7 @@ DevOpsFetch is a tool for server information retrieval and monitoring. It collec
 
 ### Step 1: Clone the Repository
 
-git clone <repository-url>
+git clone https://github.com/seyramgabriel/HNG-DevOps-Fetch-Tool
 
 ```
 cd devopsfetch
