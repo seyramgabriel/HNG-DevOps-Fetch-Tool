@@ -46,7 +46,10 @@ The installation script will check for the availability of dependencies and inst
 #### Usage
 
 Running the Script Manually
-You can use devopsfetch.sh to retrieve various system information. Here are the available options:
+
+You can use devopsfetch.sh to retrieve various system information. 
+
+Here are the available options:
 
 ```sh
 ./devopsfetch.sh [OPTIONS]
