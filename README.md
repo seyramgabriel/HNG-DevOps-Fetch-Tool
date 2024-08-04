@@ -25,12 +25,18 @@ DevOpsFetch is a tool for server information retrieval and monitoring. It collec
 ### Step 1: Clone the Repository
 
 git clone <repository-url>
+
+```
 cd devopsfetch
+```
+
 Step 2: Make the Installation Script Executable
-sh
-Copy code
+```sh
 chmod +x install.sh
+```
+
 Step 3: Run the Installation Script
+
 The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service.
 
 ```
