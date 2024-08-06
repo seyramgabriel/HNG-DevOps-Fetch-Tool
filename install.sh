@@ -78,7 +78,7 @@ fi
 
 # Copy the systemd service file to the appropriate location
 echo "Setting up systemd service..."
-sudo cp devops_fetch.service /etc/systemd/system/
+sudo cp devopsfetch.service /etc/systemd/system/
 
 # Reload systemd to recognize the new service
 echo "Reloading systemd..."
@@ -90,6 +90,6 @@ sudo systemctl enable devops_fetch.service
 
 # Start the service
 echo "Starting devopsfetch service..."
-sudo systemctl start devops_fetch.service
+sudo systemctl start devopsfetch.service
 
 echo "Installation complete."

@@ -146,6 +146,48 @@ The logs are managed by systemd. You can view the logs using journalctl.
 journalctl -u devopsfetch.service
 ```
 
+### To make the devopsfetch.sh file executable at any and every location without quoting the path to the script
+
+#### Check Current PATH Directories
+
+```echo $PATH```
+
+Example output:
+
+/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+#### Move the devopsfetch.sh script to one of the directories listed in your PATH. For example:
+
+```
+sudo mv /path/to/devopsfetch.sh /usr/local/bin/devopsfetch
+```
+
+Example
+
+```
+sudo mv /home/ubuntu/devopsfetch.sh /usr/local/bin/devopsfetch
+```
+
+#### Ensure the script is executable:
+
+```
+sudo chmod +x /usr/local/bin/devopsfetch
+```
+
+#### Now you can run the devopsfetch script at any location without absolute path referencing
+
+```
+devopsfetch [ options ]
+```
+
+Example
+
+```
+./devopsfetch -d
+./devopsfecth -p
+./devopsfetch -u
+```
+
 ### Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
