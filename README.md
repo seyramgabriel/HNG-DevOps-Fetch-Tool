@@ -37,7 +37,7 @@ chmod +x install.sh
 
 Step 3: Run the Installation Script
 
-The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service.
+The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service. Ensure you modify path to devopsfetch.sh to reflect the location of the script in devopsfetch.service file before you run install.sh.
 
 ```
 ./install.sh
@@ -143,7 +143,7 @@ sudo systemctl status devopsfetch.service
 The logs are managed by systemd. You can view the logs using journalctl.
 
 ```sh
-journalctl -u devopsfetch.service
+journalctl -u devops_fetch.service
 ```
 
 ### To make the devopsfetch.sh file executable at any and every location without quoting the path to the script
@@ -173,6 +173,14 @@ sudo mv /home/ubuntu/devopsfetch.sh /usr/local/bin/devopsfetch
 ```
 sudo chmod +x /usr/local/bin/devopsfetch
 ```
+
+#### Update the devopsfetch.service (located in /etc/systemd/system) file with the new location of devopsfetch script
+
+Example
+
+ExecStart=/usr/local/bin/devopsfetch  
+
+You can run ```which devopsfetch``` to output the location of devopsfetch script
 
 #### Now you can run the devopsfetch script at any location without absolute path referencing
 
@@ -213,6 +221,8 @@ export PATH=$PATH:/path/to/devopsfetch-directory # example export PATH=$PATH:/ho
 ```
 source ~/.bashrc
 ```
+
+Remember to update the devopsfetch.service file (located in /etc/systemd/system) with the new location of devopsfetch script
 
 #### Now you can run the devopsfetch script at any location without absolute path referencing
 

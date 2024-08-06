@@ -2,7 +2,7 @@
 Description=DevOpsFetch Service
 
 [Service]
-ExecStart=/usr/bin/bash /home/ubuntu/HNG/devops_fetch.sh
+ExecStart=/usr/bin/bash /home/ubuntu/devopsfetch.sh   # Modify path to devopsfetch.sh to reflect the location of the script
 Restart=always
 User=root
 

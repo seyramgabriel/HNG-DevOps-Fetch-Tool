@@ -86,7 +86,7 @@ sudo systemctl daemon-reload
 
 # Enable the service to start on boot
 echo "Enabling devops_fetch service to start on boot..."
-sudo systemctl enable devops_fetch.service
+sudo systemctl enable devopsfetch.service
 
 # Start the service
 echo "Starting devopsfetch service..."
