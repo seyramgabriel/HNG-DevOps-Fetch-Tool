@@ -183,9 +183,9 @@ devopsfetch [ options ]
 Example
 
 ```
-./devopsfetch -d
-./devopsfecth -p
-./devopsfetch -u
+devopsfetch -d
+devopsfecth -p
+devopsfetch -u
 ```
 
 ### Contributing
