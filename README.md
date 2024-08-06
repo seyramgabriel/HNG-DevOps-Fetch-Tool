@@ -188,11 +188,45 @@ devopsfecth -p
 devopsfetch -u
 ```
 
-### Contributing
+### Alternatively:
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
+#### Create a directory and move devopsfetch.sh into that directory
 
-### License
+```
+mkdir devopsfetch-directory && mv devopsfetch.sh devopsfetch-directory
+```
 
-This project is licensed under the MIT License.
+#### Add devopsfetch-directory to $PATH
+
+```
+sudo nano ~/.bashrc
+```
+
+#### Scroll down and add this line
+
+```
+export PATH=$PATH:/path/to/devopsfetch-directory # example export PATH=$PATH:/home/ubuntu/devopsfetch-directory
+```
+
+#### Restart the bash shell
+
+```
+source ~/.bashrc
+```
+
+#### Now you can run the devopsfetch script at any location without absolute path referencing
+
+```
+devopsfetch [ options ]
+```
+
+Example
+
+```
+./devopsfetch -d
+./devopsfecth -p
+./devopsfetch -u
+```
+
+
 
