@@ -181,7 +181,7 @@ Example
 
 ExecStart=/usr/local/bin/devopsfetch  
 
-You can run ```which devopsfetch``` to output the location of devopsfetch script
+Run ```which devopsfetch``` to output the location of devopsfetch script
 
 #### Now you can run the devopsfetch script at any location without absolute path referencing
 
@@ -207,11 +207,12 @@ mkdir devopsfetch-directory && mv devopsfetch.sh devopsfetch-directory
 
 #### Add devopsfetch-directory to $PATH
 
+Run
 ```
 sudo nano ~/.bashrc
 ```
 
-#### Scroll down and add this line
+Scroll down and add this line
 
 ```
 export PATH=$PATH:/path/to/devopsfetch-directory # example export PATH=$PATH:/home/ubuntu/devopsfetch-directory
