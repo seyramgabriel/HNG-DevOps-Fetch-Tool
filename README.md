@@ -27,7 +27,7 @@ DevOpsFetch is a tool for server information retrieval and monitoring. It collec
 git clone https://github.com/seyramgabriel/HNG-DevOps-Fetch-Tool
 
 ```
-cd devopsfetch
+cd HNG-DevOps-Fetch-Tool
 ```
 
 Step 2: Make the Installation Script Executable
@@ -37,7 +37,7 @@ chmod +x install.sh
 
 Step 3: Run the Installation Script
 
-The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service. Ensure you modify path to devopsfetch.sh to reflect the location of the script in devopsfetch.service file before you run install.sh.
+The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service. Ensure you modify path to devopsfetch.sh in the devopsfetch.service file to reflect the location of the script before you run install.sh.
 
 ```
 ./install.sh
@@ -45,7 +45,7 @@ The installation script will check for the availability of dependencies and inst
 
 #### Usage
 
-Running the Script Manually
+##### Running the Script Manually
 
 You can use devopsfetch.sh to retrieve various system information. 
 
@@ -144,7 +144,7 @@ sudo systemctl status devopsfetch.service
 The logs are managed by systemd. You can view the logs using journalctl.
 
 ```sh
-journalctl -u devops_fetch.service
+journalctl -u devopsfetch.service
 ```
 
 ### To make the devopsfetch.sh file executable at any and every location without quoting the path to the script
@@ -217,7 +217,8 @@ Scroll down and add this line
 ```
 export PATH=$PATH:/path/to/devopsfetch-directory 
 ```
-# example 
+
+ example 
 
 ```
 export PATH=$PATH:/home/ubuntu/devopsfetch-directory
