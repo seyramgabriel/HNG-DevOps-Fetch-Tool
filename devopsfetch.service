@@ -1,9 +1,11 @@
 [Unit]
 Description=DevOpsFetch Service
+After=network.target
 
 [Service]
+Type=simple
 ExecStart=/usr/bin/bash /home/ubuntu/devopsfetch.sh   # Modify path to devopsfetch.sh to reflect the location of the script
-Restart=always
+Restart=once
 User=root
 
 [Install]
