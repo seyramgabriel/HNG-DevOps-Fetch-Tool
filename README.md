@@ -36,7 +36,7 @@ chmod +x install.sh
 
 Step 3: Run the Installation Script
 
-The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service. Ensure you modify path to devopsfetch.sh in the devopsfetch.service file to reflect the location of the script before you run install.sh.
+The installation script will check for the availability of dependencies and install them if necessary. It will also set up the devopsfetch systemd service. Do ensure you modify the path to devopsfetch.sh in the devopsfetch.service file to reflect the location of the script before you run install.sh.
 
 ```
 ./install.sh
