@@ -182,7 +182,7 @@ ExecStart=/usr/local/bin/devopsfetch
 
 Run ```which devopsfetch``` to output the location of devopsfetch script in order to update the devopsfetch.service file correctly with the path.
 
-#### Now you can run the devopsfetch script at any location without absolute path referencing
+#### Now you can run the devopsfetch script at any location without path referencing
 
 ```
 devopsfetch [ options ]
@@ -231,7 +231,7 @@ source ~/.bashrc
 
 Remember to update the devopsfetch.service file (located in /etc/systemd/system) with the new location of devopsfetch script
 
-#### Now you can run the devopsfetch script at any location without absolute path referencing
+#### Now you can run the devopsfetch script at any location without path referencing
 
 ```
 devopsfetch [ options ]
