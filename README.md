@@ -218,7 +218,7 @@ Scroll down and add this line
 export PATH=$PATH:/path/to/devopsfetch-directory 
 ```
 
- example 
+ Example 
 
 ```
 export PATH=$PATH:/home/ubuntu/devopsfetch-directory
