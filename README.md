@@ -16,7 +16,6 @@ DevOpsFetch is a tool for server information retrieval and monitoring. It collec
 
 ## Requirements
 
-- Python 3
 - Docker
 - Nginx
 
