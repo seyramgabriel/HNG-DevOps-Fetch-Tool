@@ -129,14 +129,14 @@ The devopsfetch tool includes a systemd service for continuous monitoring and lo
 sudo systemctl start devopsfetch.service
 ```
 
+ # Enable the Service to Start on Boot
 ```sh
 sudo systemctl enable devopsfetch.service
-# Enable the Service to Start on Boot
 ```
 
+# Check the Status of the Service
 ```sh
 sudo systemctl status devopsfetch.service
-# Check the Status of the Service
 ```
 
 #### View the Logs

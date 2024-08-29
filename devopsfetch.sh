@@ -188,7 +188,7 @@ main() {
 
     if [[ "$#" -eq 0 ]]; then
         echo ""
-        display_help
+        echo For Usage Instructions run devopsfetch -h    # display_help
     fi
 }
 
