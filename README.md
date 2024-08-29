@@ -123,18 +123,18 @@ Example
 
 The devopsfetch tool includes a systemd service for continuous monitoring and logging.
 
-#### Start the Service
+##### Start the Service
 
 ```sh
 sudo systemctl start devopsfetch.service
 ```
 
- # Enable the Service to Start on Boot
+ ##### Enable the Service to Start on Boot
 ```sh
 sudo systemctl enable devopsfetch.service
 ```
 
-# Check the Status of the Service
+##### Check the Status of the Service
 ```sh
 sudo systemctl status devopsfetch.service
 ```
